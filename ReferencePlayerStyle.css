@@ -68,16 +68,13 @@ body{
 }
 
 #firstBox {
-    margin-left: 10%;
+    margin-left: 33%;
 }
 
 #secondBox {
-    margin-left: 40%;
+    margin-left: 66%;
 }
 
-#thirdBox {
-    margin-left: 70%;
-}
 
 h3 {
     text-align: center;
