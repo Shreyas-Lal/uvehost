@@ -233,13 +233,13 @@ class AAMPPlayer {
 
     resetConfiguration(){
         
-        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< RESET RESET RESET Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        //console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< RESET RESET RESET Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         this.player.resetConfiguration();
     }
 
     setConfiguration(config){
         //JSON.parse("{\"abr\":false}")
-        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<SET SET SET Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+       // console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<SET SET SET Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         this.player.initConfig(config);
     }
 
