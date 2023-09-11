@@ -237,16 +237,13 @@ class AAMPPlayer {
         this.player.resetConfiguration();
     }
 
-    setConfiguration(){
+    setConfiguration(config){
+        //JSON.parse("{\"abr\":false}")
         console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<SET SET SET Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-        this.player.setConfiguration(JSON.parse("{\"abr\":false}"));
+        this.player.setConfiguration(config);
     }
 
     getConfiguration(){
-        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",JSON.parse(this.player.getConfiguration()));
-        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",JSON.stringify(this.player.getConfiguration()));
-        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",this.player.getTextTrackInfo());
-
             return this.player.getConfiguration();
     }
     

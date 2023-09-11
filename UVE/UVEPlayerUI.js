@@ -149,7 +149,8 @@ function skipForward() {
 };
 
 function fastrwd() {
-    playerObj.setConfiguration();
+    var config1="{\"abr\":false}";
+    playerObj.setConfiguration(config1);
 };
 
 function fastfwd() {
