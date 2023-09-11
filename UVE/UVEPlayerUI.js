@@ -134,7 +134,8 @@ function skipTime(tValue) {
 }
 
 function skipBackward() {
-    playerObj.getConfiguration();
+    var cfg= playerObj.getConfiguration();
+    console.log("<<<<<<<<<<<<<<<<<<<<<<CONFIG PRINT>>>>>>>>>>>>>>>>>>>>>>   \s"+JSON.stringify(cfg))
     playerObj.resetConfiguration();
 };
 
