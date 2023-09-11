@@ -245,7 +245,7 @@ class AAMPPlayer {
     getConfiguration(){
         console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",JSON.parse(this.player.getConfiguration()));
         console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",JSON.stringify(this.player.getConfiguration()));
-        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",this.player.getConfiguration());
+        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",this.player.getTextTrackInfo());
     }
     
     
