@@ -238,8 +238,8 @@ class AAMPPlayer {
     }
 
     setConfiguration(){
-        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<SetSet SetSet SetSet Set Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-        this.player.setConfiguration("{\"abr\":false}");
+        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<SET SET SET Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        this.player.setConfiguration(JSON.parse("{\"abr\":false}"));
     }
 
     getConfiguration(){

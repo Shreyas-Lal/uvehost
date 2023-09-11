@@ -864,17 +864,4 @@ function cacheStream(urlObject, isLive) {
     bgPlayerObj.load(urlObject.url, false);
 }
 
-function toggleVideo() {
-    let ret = false;
-    if(bgPlayerObj != null && playerObj != null)
-    {
-        playerObj.detach();
-        bgPlayerObj.play();
-        let tmpPlayer = playerObj;
-        playerObj = bgPlayerObj;
-        bgPlayerObj = tmpPlayer;
-        cacheNextAsset();
-        ret = true;
-    }
-    return ret;
-}
+

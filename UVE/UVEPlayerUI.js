@@ -133,10 +133,15 @@ function skipTime(tValue) {
     }
 }
 
+function toggleVideo() {
+    console.log("<<<<<<<<<<<<<<<<<<<<<<CONFIG PRINT>>>>>>>>>>>>>>>>>>>>>>");
+    playerObj.resetConfiguration();
+}
+
 function skipBackward() {
     var cfg= playerObj.getConfiguration();
-    console.log("<<<<<<<<<<<<<<<<<<<<<<CONFIG PRINT>>>>>>>>>>>>>>>>>>>>>>   \s"+JSON.stringify(cfg))
-    playerObj.resetConfiguration();
+    console.log("<<<<<<<<<<<<<<<<<<<<<<CONFIG PRINT>>>>>>>>>>>>>>>>>>>>>>   \s"+cfg)
+    
 };
 
 function skipForward() {
@@ -145,7 +150,6 @@ function skipForward() {
 
 function fastrwd() {
     playerObj.setConfiguration();
-
 };
 
 function fastfwd() {
