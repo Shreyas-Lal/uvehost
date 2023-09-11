@@ -133,14 +133,19 @@ function skipTime(tValue) {
     }
 }
 
-function toggleVideo() {
-    console.log("<<<<<<<<<<<<<<<<<<<<<<CONFIG PRINT>>>>>>>>>>>>>>>>>>>>>>");
+function configreset() {
+    console.log("       CONFIG RESET           \n");
     playerObj.resetConfiguration();
 }
 
-function skipBackward() {
+function configset() {
+    var config={abr:false};
+    playerObj.setConfiguration(config);
+};
+
+function configprint() {
     var cfg= playerObj.getConfiguration();
-    console.log("<<<<<<<<<<<<<<<<<<<<<<CONFIG PRINT>>>>>>>>>>>>>>>>>>>>>>   \s"+cfg)
+    console.log("    CONFIG PRINT    \n "+cfg)
     
 };
 
@@ -148,11 +153,7 @@ function skipForward() {
     skipTime(300);
 };
 
-function fastrwd() {
-    var config1="{\"abr\":false}";
-    var config2={abr:false};
-    playerObj.setConfiguration(config2);
-};
+
 
 function fastfwd() {
     var newSpeedIndex = playbackRateIndex + 1;
@@ -410,12 +411,12 @@ var HTML5PlayerControls = function() {
 
         // Event listener for the rewind button
         this.rwdButton.addEventListener("click", function() {
-            fastrwd();
+            configset();
         });
 
         // Event listener for the skip Backward button
         this.skipBwdButton.addEventListener("click", function() {
-            skipBackward();
+            configprint();
         });
 
         // Event listener for the skip Forward button
@@ -624,13 +625,13 @@ var HTML5PlayerControls = function() {
                     playPause();
                     break;
             case 1:
-                    toggleVideo();
+                    configreset();
                     break;
             case 2:
-                    fastrwd();
+                    configset();
                     break;
             case 3:
-                    skipBackward();
+                configprint();
                     break;
             case 4:
                     skipForward();
@@ -764,7 +765,7 @@ var HTML5PlayerControls = function() {
                         break;
                 case 88: // X
 		        case 34:
-                        skipBackward();
+                    configprint();
                         break;
                 case 90: // Z
 		        case 33:
@@ -787,7 +788,7 @@ var HTML5PlayerControls = function() {
                         break;
                 case 82: // R
 		        case 227:
-                        fastrwd();
+                        configset();
                         break;
                 case 70: // F
 		        case 228:
