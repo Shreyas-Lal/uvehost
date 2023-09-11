@@ -134,7 +134,8 @@ function skipTime(tValue) {
 }
 
 function skipBackward() {
-    skipTime(-300);
+    playerObj.getConfiguration();
+    playerObj.resetConfiguration();
 };
 
 function skipForward() {
@@ -142,14 +143,8 @@ function skipForward() {
 };
 
 function fastrwd() {
-    var newSpeedIndex = playbackRateIndex - 1;
-    if (newSpeedIndex < 0) {
-        newSpeedIndex = 0;
-    }
-    if (newSpeedIndex !== playbackRateIndex) {
-        console.log("Change speed from [" + playbackSpeeds[playbackRateIndex] + "] -> [" + playbackSpeeds[newSpeedIndex] + "]");
-        playerObj.setPlaybackRate(playbackSpeeds[newSpeedIndex]);
-    }
+    playerObj.setConfiguration();
+
 };
 
 function fastfwd() {

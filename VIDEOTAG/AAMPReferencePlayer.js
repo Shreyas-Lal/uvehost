@@ -306,6 +306,11 @@ window.onload = function() {
         this.init = function() {
             this.video = document.getElementById("video");
 
+            //Testing buttons
+            this.resetButton = document.getElementById("testreset");
+            this.configButton=document.getElementById("testconfig")
+
+
             // Buttons
             this.playButton = document.getElementById("playOrPauseButton");
             this.rwdButton = document.getElementById("rewindButton");
@@ -322,7 +327,9 @@ window.onload = function() {
             this.videoFileList = document.getElementById("videoURLs");
 
             this.currentObj = this.playButton;
-            this.components = [this.playButton, this.rwdButton, this.skipBwdButton, this.skipFwdButton, this.fwdButton, this.muteButton, this.closedCaptionButton, this.videoFileList, this.autoVideoLogButton, this.homeContentButton ];
+            this.components = [this.playButton, this.rwdButton, this.skipBwdButton, this.skipFwdButton, this.fwdButton,
+                 this.muteButton, this.closedCaptionButton, this.videoFileList, this.autoVideoLogButton, this.homeContentButton
+                ,this.resetButton,this.configButton];
             this.currentPos = 0;
             this.dropDownListVisible = false;
             this.selectListIndex = 0;

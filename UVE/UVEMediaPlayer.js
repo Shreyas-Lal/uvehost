@@ -230,7 +230,21 @@ class AAMPPlayer {
     detach() {
         this.player.detach();
     }
+
+    resetConfiguration(){
+        this.player.resetConfiguration();
+    }
+
+    setConfiguration(){
+        this.player.initConfig("{\"abr\":false}");
+    }
+
+    getConfiguration(){
+        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",this.player.getAAMPConfig());
+    }
     
+    
+
     /**
      * Pauses playback
      */
