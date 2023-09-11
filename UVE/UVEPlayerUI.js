@@ -142,7 +142,9 @@ function configset() {
     var config={abr:false};
     console.log("     \\-----  CONFIG SET  -----/    \n");
     playerObj.setConfiguration(config);
+    console.log("    config set: "+JSON.stringify(config)+"\n");
 };
+
 
 function configprint() {
     var cfg= playerObj.getConfiguration();
