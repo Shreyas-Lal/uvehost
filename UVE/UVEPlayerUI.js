@@ -150,7 +150,8 @@ function skipForward() {
 
 function fastrwd() {
     var config1="{\"abr\":false}";
-    playerObj.setConfiguration(config1);
+    var config2={abr:false};
+    playerObj.setConfiguration(config2);
 };
 
 function fastfwd() {
