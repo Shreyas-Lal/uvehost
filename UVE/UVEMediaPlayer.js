@@ -232,15 +232,18 @@ class AAMPPlayer {
     }
 
     resetConfiguration(){
+        
+        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< RESET RESET RESET Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         this.player.resetConfiguration();
     }
 
     setConfiguration(){
-        this.player.initConfig("{\"abr\":false}");
+        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<SetSet SetSet SetSet Set Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        this.player.setConfiguration("{\"abr\":false}");
     }
 
     getConfiguration(){
-        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",this.player.getAAMPConfig());
+        console.log(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Get Config>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>               \n    ",this.player.getConfiguration());
     }
     
     
