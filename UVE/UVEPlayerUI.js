@@ -139,7 +139,7 @@ function configreset() {
 }
 
 function configset() {
-    var config={abr:false};
+    var config={trace:true};
     console.log("     \\-----  CONFIG SET  -----/    \n");
     playerObj.setConfiguration(config);
     console.log("    config set: "+JSON.stringify(config)+"\n");
